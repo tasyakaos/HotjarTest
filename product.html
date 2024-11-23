@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product">
+        <h2>Sample Product</h2>
+        <p>Price: $10.00</p>
+        <button onclick="addToCart()">Add to Cart</button>
+        <p id="cart-message" class="hidden">Item added to cart!</p>
+    </section>
+
+    <footer>
+        <p>Test Website - Created for Hotjar Testing</p>
+    </footer>
+
+    <script>
+        function addToCart() {
+            document.getElementById("cart-message").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
